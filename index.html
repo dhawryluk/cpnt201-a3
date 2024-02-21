@@ -3,7 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CPNT 201 Assignment 3 - Tailwind in a Branch</title>
+    <script
+      src="https://kit.fontawesome.com/0e7c2da82b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,200;0,300;1,900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {},
+      };
+    </script>
+    <title>Tailwind in a Branch</title>
   </head>
-  <body></body>
+
+  <body class="w-full h-96 bg-cover bg-center">
+    <div class="flex-col text-center">
+      <img class="" src="pexels952670.jpg" alt="blacksand" />
+      <div class="absolute top-0 text-white md:top-50% md:left-3rem">
+        <h1 class="text-[5rem]">Derek Hawryluk</h1>
+        <h2 class="text-[1.3rem]">Professional Website</h2>
+      </div>
+    </div>
+    <div>
+      <h1 class="title">Photo Gallery</h1>
+    </div>
+
+    <div
+      class="grid place-content-center gap-[10px] md:flex-row md:flex flex-wrap"
+    >
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="1"
+      />
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="2"
+      />
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="3"
+      />
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="4"
+      />
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="5"
+      />
+      <img
+        class="w-[500px] h-[300px] rounded-[5px] transition-all ease-in-out duration-300 hover:ease-in hover:scale-105"
+        src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        alt="6"
+      />
+    </div>
+    <div
+      class="bg-[#2c2e31] flex-col text-center h-[200px] pt-[20px] mt-[3rem]"
+    >
+      <p class="text-[2rem] font-semibold p-[20px]">Contact Me.</p>
+      <ul
+        class="flex gap-[20px] justify-center text-[#535659] text-[3rem] m-[16px]"
+      >
+        <li class="hover:text-black">
+          <a href="https://linkedin.com/in/derek-hawryluk" target="linkedin">
+            <i class="fa fa-linkedin hover:text-black" tabindex="0"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:derek.hawryluk@gmail.com" target="email">
+            <i class="fa fa-envelope hover:text-black" tabindex="0"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/the_real_derek/"
+            target="instagram"
+          >
+            <i class="fa fa-instagram hover:text-black" tabindex="0"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/dhawryluk" target="github">
+            <i class="fa fa-github hover:text-black" tabindex="0"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCEDWUq44kx-UonOTYjG2YFA"
+            target="youtube"
+          >
+            <i
+              class="fa fa-youtube hover:text-black"
+              tabindex="0"
+              target="youtube"
+            ></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i
+              class="fa fa-pinterest hover:text-black"
+              tabindex="0"
+              target="pinterest"
+            ></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
