@@ -21,23 +21,124 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {},
+        theme: {
+          colors: {
+            white: "#fff",
+            teal: "#2dd4bf"
+            darkGrey: "#2c2e31",
+          },
+          fontFamily: {
+            hero: ["Montserrat", "sans-serif"],
+            para: ["Poppins", "serif"],
+            heading: ["Oswald", "serif"],
+          },
+        },
       };
     </script>
     <title>Tailwind in a Branch</title>
   </head>
-
-  <body class="w-full h-96 bg-cover bg-center">
-    <div class="flex-col text-center">
-      <img class="" src="pexels952670.jpg" alt="blacksand" />
-      <div class="absolute top-0 text-white md:top-50% md:left-3rem">
-        <h1 class="text-[5rem]">Derek Hawryluk</h1>
-        <h2 class="text-[1.3rem]">Professional Website</h2>
+  <body class="bg-slate-200">
+    <header style="background-image: url('./images/pexels952670.jpg')">
+      <div class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-baseline">
+          <a href="#" class="font-['Poppins'] text-3xl font-bold text-teal-400"
+            >DKH</a
+          >
+          <div>
+            <a
+              href="#"
+              class="font-['Poppins'] font-bold text-gray-100 hover:text-teal-400 mx-4"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="font-['Poppins'] font-bold text-gray-100 hover:text-teal-400 mx-4"
+              >About</a
+            >
+            <a
+              href="#"
+              class="font-['Poppins'] font-bold text-gray-100 hover:text-teal-400 mx-4"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="font-['Poppins'] font-bold text-gray-100 hover:text-teal-400 mx-4"
+              >Blog</a
+            >
+          </div>
+        </nav>
+        <div class="flex flex-col justify-center items-center my-16">
+          <h1
+            class="font-['Montserrat'] text-5xl font-bold text-white leading-tight"
+          >
+            Derek Hawryluk
+          </h1>
+          <p class="font-['Poppins'] text-2xl text-white mt-4">
+            Professional Website
+          </p>
+          <button
+            class="bg-black hover:bg-teal-400 text-white text-xl mt-8 py-4 px-8 rounded-lg"
+          >
+            Look Inside
+          </button>
+        </div>
       </div>
-    </div>
-    <div>
-      <h1 class="title">Photo Gallery</h1>
-    </div>
+    </header>
+
+    <h1 class="font-heading text-center text-xl font-bold m-4">Our Services</h1>
+    <main
+      class="grid place-content-center gap-[10px] md:flex-row md:flex flex-wrap mt-4"
+    >
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-picjumbocom-196644.jpg"
+          alt="Notebook"
+        />
+        <div class="px-6 py-4 bg-teal-100">
+          <div class="font-bold text-xl mb-2">Wireframe Flow Design</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-picjumbocom-196659.jpg"
+          alt="Laptop"
+        />
+        <div class="px-6 py-4 bg-teal-100">
+          <div class="font-bold text-xl mb-2">
+            Web and Mobile Responsiveness
+          </div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-pixabay-270408.jpg"
+          alt="PC Screen"
+        />
+        <div class="px-6 py-4 bg-teal-100">
+          <div class="font-bold text-xl mb-2">Building Fundamentals</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <h1 class="text-center text-xl font-bold p-4">Photo Gallery</h1>
 
     <div
       class="grid place-content-center gap-[10px] md:flex-row md:flex flex-wrap"
@@ -82,12 +183,12 @@
       >
         <li class="hover:text-black">
           <a href="https://linkedin.com/in/derek-hawryluk" target="linkedin">
-            <i class="fa fa-linkedin hover:text-black" tabindex="0"></i>
+            <i class="fa fa-linkedin hover:text-teal-400" tabindex="0"></i>
           </a>
         </li>
         <li>
           <a href="mailto:derek.hawryluk@gmail.com" target="email">
-            <i class="fa fa-envelope hover:text-black" tabindex="0"></i>
+            <i class="fa fa-envelope hover:text-teal-400" tabindex="0"></i>
           </a>
         </li>
         <li>
@@ -95,12 +196,12 @@
             href="https://www.instagram.com/the_real_derek/"
             target="instagram"
           >
-            <i class="fa fa-instagram hover:text-black" tabindex="0"></i
+            <i class="fa fa-instagram hover:text-teal-400" tabindex="0"></i
           ></a>
         </li>
         <li>
           <a href="https://github.com/dhawryluk" target="github">
-            <i class="fa fa-github hover:text-black" tabindex="0"></i>
+            <i class="fa fa-github hover:text-teal-400" tabindex="0"></i>
           </a>
         </li>
         <li>
@@ -109,7 +210,7 @@
             target="youtube"
           >
             <i
-              class="fa fa-youtube hover:text-black"
+              class="fa fa-youtube hover:text-teal-400"
               tabindex="0"
               target="youtube"
             ></i>
@@ -118,7 +219,7 @@
         <li>
           <a href="#">
             <i
-              class="fa fa-pinterest hover:text-black"
+              class="fa fa-pinterest hover:text-teal-400"
               tabindex="0"
               target="pinterest"
             ></i>
