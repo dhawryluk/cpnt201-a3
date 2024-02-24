@@ -21,23 +21,172 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
-        theme: {},
+        theme: {
+          extend: {
+            colors: {
+              teal: "#2dd4bf",
+              grey: "#2c2e31",
+            },
+            fontFamily: {
+              hero: ["Montserrat", "sans-serif"],
+              para: ["Poppins", "serif"],
+              heading: ["Oswald", "serif"],
+            },
+          },
+        },
       };
     </script>
     <title>Tailwind in a Branch</title>
   </head>
-
-  <body class="w-full h-96 bg-cover bg-center">
-    <div class="flex-col text-center">
-      <img class="" src="pexels952670.jpg" alt="blacksand" />
-      <div class="absolute top-0 text-white md:top-50% md:left-3rem">
-        <h1 class="text-[5rem]">Derek Hawryluk</h1>
-        <h2 class="text-[1.3rem]">Professional Website</h2>
+  <body class="bg-slate-200">
+    <header style="background-image: url('./images/pexels952670.jpg')">
+      <div class="container mx-auto px-4 py-6">
+        <nav class="flex justify-between items-baseline">
+          <a href="#" class="font-heading text-3xl font-bold text-teal">DKH</a>
+          <div>
+            <a
+              href="/index.html"
+              class="font-heading font-bold text-white hover:text-teal active:bg-cyan-600 mx-4"
+              >Home</a
+            >
+            <a
+              href="./html/about.html"
+              class="font-heading font-bold text-white hover:text-teal active:bg-cyan-600 mx-4"
+              >About</a
+            >
+            <a
+              href="./html/contact.html"
+              class="font-heading font-bold text-white hover:text-teal active:bg-cyan-600 mx-4"
+              >Contact</a
+            >
+            <a
+              href="./html/blog.html"
+              class="font-heading font-bold text-white hover:text-teal active:bg-cyan-600 mx-4"
+              >Blog</a
+            >
+          </div>
+        </nav>
+        <div class="flex flex-col justify-center items-center my-16">
+          <h1
+            class="font-hero text-4xl font-bold text-white leading-tight md:text-6xl"
+          >
+            Derek Hawryluk
+          </h1>
+          <p class="font-heading text-xl text-white mt-4 md:text-2xl">
+            Professional Website
+          </p>
+          <button
+            class="bg-black hover:bg-teal text-white text-lg mt-4 py-2 px-4 rounded-md md:text-xl md:mt-8 md:py-4 md:px-8 md:rounded-lg"
+          >
+            Look Inside
+          </button>
+        </div>
       </div>
-    </div>
-    <div>
-      <h1 class="title">Photo Gallery</h1>
-    </div>
+    </header>
+    <article
+      class="text-center text-justify leading-relaxed md:max-w-5xl md:m-auto"
+    >
+      <h2 class="p-6 text-2xl font-bold italic text-center">
+        "Welcome to Derek Hawryluk's Digital Oasis: Where Web Development Meets
+        Creativity and Adventure"
+      </h2>
+      <p>
+        Welcome to the digital realm of Derek Hawryluk, a budding web developer
+        with a passion for crafting digital experiences that resonate. As you
+        step into his virtual space, you're greeted with a fusion of creativity,
+        technical prowess, and a dash of personal flair.
+      </p>
+      <br />
+      <p>
+        Derek's website serves as a gateway to his world of web design
+        excellence. Specializing in web design, wireframing, and responsiveness,
+        he leverages his strong foundation in coding fundamentals to bring
+        visions to life. Each project is a testament to his dedication to
+        creating user-centric designs that leave a lasting impression.
+      </p>
+      <br />
+      <p>
+        Beyond the screen, Derek's interests and hobbies add depth to his
+        persona. A connoisseur of both coffee and beer, he finds inspiration in
+        the simple pleasures of life, which often infuse his work with a sense
+        of warmth and familiarity. When he's not immersed in the digital realm,
+        you'll likely find him exploring the great outdoors, camera in hand,
+        capturing moments of beauty and serenity.
+      </p>
+      <br />
+      <p>
+        Photography isn't just a pastime for Derek—it's a passion that
+        complements his creative journey. Through his lens, he captures the
+        essence of nature, human connection, and the world around him, inviting
+        viewers to see the world through his eyes.
+      </p>
+      <br />
+      <p>
+        Derek Hawryluk's website isn't just a portfolio—it's a reflection of his
+        identity, his values, and his commitment to excellence. Whether you're
+        in need of a captivating website, a memorable user experience, or simply
+        seeking inspiration, Derek invites you to embark on a digital journey
+        where innovation meets artistry.
+      </p>
+      <br />
+    </article>
+
+    <h1 class="font-heading text-center text-xl font-bold p-4">Our Services</h1>
+    <article
+      class="grid place-content-center gap-[10px] md:flex-row md:flex flex-wrap mt-4"
+    >
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-picjumbocom-196644.jpg"
+          alt="Notebook"
+        />
+        <div class="px-6 py-4 bg-cyan-100">
+          <div class="font-bold text-xl mb-2">Wireframe Flow Design</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-picjumbocom-196659.jpg"
+          alt="Laptop"
+        />
+        <div class="px-6 py-4 only-of-type:bg-gray-400">
+          <div class="font-bold text-xl mb-2">
+            Web and Mobile Responsiveness
+          </div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img
+          class="w-full"
+          src="./images/pexels-pixabay-270408.jpg"
+          alt="PC Screen"
+        />
+        <div class="px-6 py-4 bg-cyan-100">
+          <div class="font-bold text-xl mb-2">Building Fundamentals</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <h1 class="font-heading text-center text-xl font-bold p-4">
+      Photo Gallery
+    </h1>
 
     <div
       class="grid place-content-center gap-[10px] md:flex-row md:flex flex-wrap"
@@ -82,12 +231,12 @@
       >
         <li class="hover:text-black">
           <a href="https://linkedin.com/in/derek-hawryluk" target="linkedin">
-            <i class="fa fa-linkedin hover:text-black" tabindex="0"></i>
+            <i class="fa fa-linkedin hover:text-teal" tabindex="0"></i>
           </a>
         </li>
         <li>
           <a href="mailto:derek.hawryluk@gmail.com" target="email">
-            <i class="fa fa-envelope hover:text-black" tabindex="0"></i>
+            <i class="fa fa-envelope hover:text-teal" tabindex="0"></i>
           </a>
         </li>
         <li>
@@ -95,12 +244,12 @@
             href="https://www.instagram.com/the_real_derek/"
             target="instagram"
           >
-            <i class="fa fa-instagram hover:text-black" tabindex="0"></i
+            <i class="fa fa-instagram hover:text-teal" tabindex="0"></i
           ></a>
         </li>
         <li>
           <a href="https://github.com/dhawryluk" target="github">
-            <i class="fa fa-github hover:text-black" tabindex="0"></i>
+            <i class="fa fa-github hover:text-teal" tabindex="0"></i>
           </a>
         </li>
         <li>
@@ -109,7 +258,7 @@
             target="youtube"
           >
             <i
-              class="fa fa-youtube hover:text-black"
+              class="fa fa-youtube hover:text-teal"
               tabindex="0"
               target="youtube"
             ></i>
@@ -118,7 +267,7 @@
         <li>
           <a href="#">
             <i
-              class="fa fa-pinterest hover:text-black"
+              class="fa fa-pinterest hover:text-teal"
               tabindex="0"
               target="pinterest"
             ></i>
